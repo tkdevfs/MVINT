@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVINVT</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&family=VT323&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+
+</head>
+
+<body>
+        
+    <main class="mv-invited">
+        <div class="cabecalho">
+            <img src="./src/imagens/ur-invited.png" alt="YOU'RE INVITED">
+        </div>
+
+        <div class="tk-chat">
+            <div class="tk-user">
+                <img class="tk-foto" src="./src/imagens/Tk-circle.png" alt="foto Thiago">
+                <h2 class="tk-nome">Thiago</h2>
+            </div>
+            <p class= "tk-pergunta">Se esse aspirante a dev-frontend aqui aplicar para uma vaga no seu coração ele conseguiria uma entrevista? </p>
+        </div>
+    
+        <div class="mv-chat">
+            <div class="mv-user">
+                <img class="mv-foto" src="./src/imagens/Mavi-circle.png" alt="foto Mavi">
+                <h2 class="mv-nome">Mavi</h2>
+            </div>
+            
+            <div class="btns-resposta">
+                <div class ="btn-sim" onclick="playPause()" id="btn-sim">
+                    <img class="sim-btn" src="./src/imagens/btn-sim.png" alt="botão Sim">
+                </div>
+                <div class = "btn-nao" id="btn-nao">
+                    <img class="nao-btn" src="./src/imagens/btn-nao.png" alt="botão Não">
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    
+    <div>
+        <ul class="respostas">
+            
+            <li class="resposta selecionada">
+                <img class="semResposta" src="./src/imagens/fundo-site-invt.jpg" alt="resposta 0">
+            </li>
+
+            <li class="resposta">
+                <video class="temCerteza" id="temCerteza" width="350" height="197" controls>
+                    <source src="./src/midia/tem-certeza.mp4" type="video/mp4">
+                    <source src="./src/midia/tem-certeza.ogv" type="video/ogv">
+                    <source src="./src/midia/tem-certeza.webm" type="video/webm">
+
+                </video>
+                <div class="confirmando">
+                    <div class="btn-certeza" id="btn-certeza">
+                        <img src="./src/imagens/btn-sim.png" alt="botão Certeza">
+                    </div>
+
+                    <div class="btn-naoTenho" id="btn-naoTenho">
+                        <img src="./src/imagens/btn-nao.png" alt="botão não tenho">
+                    </div>
+
+                </div>
+
+            </li>
+
+            <li class="resposta">
+                <div class="tk-chat">
+                    <div class="tk-user">
+                        <img class="tk-foto" src="./src/imagens/Tk-circle.png" alt="foto Thiago">
+                        <h2 class="tk-nome">Thiago</h2>
+                    </div>
+                    <p class= "tk-respSim">kkkkk, piadas!<br><a href="https://chat.whatsapp.com/K5U3Ee95oxsJTfR2x7GONk" target="_blank" rel="noopener noreferrer"> <span>Click aqui</span></a> pra gente marcar!
+                    </p>
+                    
+                </div>
+            </li>
+
+            <li class="resposta">
+                <div class="tk-chat">
+                    <div class="tk-user">
+                        <img class="tk-foto" src="./src/imagens/Tk-circle.png" alt="foto Thiago">
+                        <h2 class="tk-nome">Thiago</h2>
+                    </div>
+                    <p class= "tk-respNao">Tudo bem! Mas e aí, o que achou?</p>
+            </li>
+        </ul>
+
+    </div>
+   
+
+    <script src="./src/js/index.js"></script>
+</body>
+</html>

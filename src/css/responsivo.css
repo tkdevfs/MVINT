@@ -1,0 +1,19 @@
+@media (max-width: 375px){
+    .mv-invited{
+        padding: 0 15px;
+        gap: 10px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .tk-chat .tk-pergunta{
+        font-size: 14px;
+    }
+
+    .temCerteza iframe{
+        margin: 20px 0px 0px 20px;
+    }
+}

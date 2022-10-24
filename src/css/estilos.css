@@ -1,0 +1,284 @@
+body{
+    background-image: url(../imagens/fundo-site-invt.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'Outfit', sans-serif;
+    color: #000;
+    font-size: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2px;
+}
+
+.cabecalho img{
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 20px 0px 0px 0px;
+    
+}
+
+.tk-chat{
+    width: 350px;
+
+    border: 2px solid #e4e5a5;
+    border-radius: 25px;
+
+    background-color: #f8f9c0;
+    display: flex;
+    margin: 30px 0px 20px 0px;
+
+}
+
+.tk-chat .tk-user{
+    width: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 5px;
+    padding-left: 5px;
+
+    font-size: 12px;
+    gap: 2px;
+}
+
+.tk-chat .tk-user img{
+    width: 96px;
+    height: 96px;
+    
+    border-radius: 50px;
+    border: 4px solid #02d08f;
+    
+}
+
+.tk-chat .tk-pergunta{
+    padding-top: 5px;
+    padding-left: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 15px;
+}
+
+.mv-chat{
+    width: 350px;
+    border: 2px solid #e4e5a5;
+    border-radius: 25px;
+    
+    background-color: #f8f9c0;
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+
+.mv-chat .mv-user{
+    width: 100px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 5px;
+    padding-right: 5px;
+
+    font-size: 12px;
+    align-items: center;
+    gap: 2px;
+}
+
+.mv-chat .mv-user img{
+    width: 96px;
+    height: 96px;
+    
+    border-radius: 50px;
+    border: 4px solid #02d08f;
+    
+}
+
+.mv-chat .btns-resposta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 50px;
+    padding-right: 25px;
+    gap: 50px;
+}
+
+.mv-chat .btns-resposta .btn-sim img{
+    width: 60px;
+    height: 30px;
+}
+
+.mv-chat .btns-resposta .btn-sim{
+    background-color: #fbfd91;
+    width: 60px;
+    height: 30px;
+    border-radius: 50px;
+    border: 0px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.mv-chat .btns-resposta .btn-nao img{
+    width: 60px;
+    height: 30px;
+}
+
+.mv-chat .btns-resposta .btn-nao{
+    background-color: #fbfd91;
+    width: 60px;
+    height: 30px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.mv-chat .btns-resposta .btn-sim:hover{
+    background-color: #fcff68;
+}
+.mv-chat .btns-resposta .btn-nao:hover{
+    background-color: #fcff68;
+}
+
+.respostas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.resposta{
+    opacity: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+}
+.resposta.selecionada{
+    opacity: 1;
+    z-index: 1;
+}
+
+.semResposta{
+    width: 350px;
+    height: 180px;
+    border-radius: 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 10px 0px 0px 0px;
+}
+
+.temCerteza{
+    width: 350px;
+    height: 180px;
+    border-radius: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 10px 0px 0px 0px; 
+}
+
+.confirmando .btn-certeza img{
+    width: 60px;
+    height: 30px;
+}    
+
+.confirmando .btn-certeza{
+    background-color: #fbfd91;
+    width: 60px;
+    height: 30px;
+    border-radius: 50px;
+    border: 0;
+
+    margin: 5px 0px 0px 55px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.confirmando .btn-naoTenho img{
+    width: 60px;
+    height: 30px;
+}
+
+.confirmando .btn-naoTenho{
+    background-color: #fbfd91;
+    width: 60px;
+    height: 30px;
+    border-radius: 50px;
+    border: 0;
+
+    margin: 5px 0px 0px 55px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.confirmando{
+    display: flex;
+}
+
+.tk-respSim{
+    padding-top: 5px;
+    padding-left: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 15px;
+}
+
+.respostas .tk-respSim span{
+    color: #1d87bd;
+}
+.respostas .tk-respSim span:hover{
+    color: #02d08f
+}
+
+.tk-respNao{
+    padding-top: 5px;
+    padding-left: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 15px;
+}
