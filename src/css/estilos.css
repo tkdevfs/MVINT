@@ -252,6 +252,13 @@ body{
     display: flex;
 }
 
+.confirmando .btn-certeza:hover{
+    background-color: #fcff68;
+}
+.confirmando .btn-naoTenho:hover{
+    background-color: #fcff68;
+}
+
 .tk-respSim{
     padding-top: 5px;
     padding-left: 15px;
