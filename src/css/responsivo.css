@@ -1,4 +1,8 @@
 @media (max-width: 375px){
+    .cabecalho{
+        margin: -20px;
+    }
+    
     .mv-invited{
         padding: 0 15px;
         gap: 10px;
